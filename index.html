@@ -1,1 +1,229 @@
-html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>Trabalhos - SLACA 2019</title>
+</head>
+<header>
+    <ul class="nav" id="main_menu">
+        <li id="titulo">
+            <h1><strong>SLACA 2019</strong></h1>
+        </li>
+        <li id="cabecalho">
+            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+            <h2>Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</h2>
+            <p>ISSN: 1234-5678</p>
+        </li>
+        <button class="nav-item btn dropdown-toggle" id="linguagem" type="button">
+            <img src="./src/img/language_image.svg"><p>PT-BR</p>
+        </button>
+        <li class="nav-item" id="conta">
+            <div id="menu_conta">
+                <p>Bem vindo!</p>
+                <p>alguem12@galoacience.com</p>
+            </div>
+            <a href="#"><img class="img_conta" src="./src/img/account_image.svg" ></a>
+        </li>
+    </ul>
+</header>
+<body>
+    <div id="corpo">
+        <div class="side_bar">
+            <ul class="nav flex-column">
+                <li><img id="logo" src="./src/img/logo.svg"></li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comitês</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Autores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Eixos temáticos</a>
+                </li>
+                <li class="nav-item" id="trabalhos">
+                    <a class="nav-link" href="#">Trabalhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <div id="titulo_pesquisa">
+                <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h3>
+                <div id="extras">
+                    <div id="botoes_extra">
+                        <button id="download" type="button" class="btn"><img class="icone" src="./src/img/download_icon.svg"> Download</button>
+                        <button id="favorite" type="button" class="btn"><img class="icone" src="./src/img/star_icon.svg"></button>
+                        <button id="doi" type="button" class="btn"><img class="icone" src="./src/img/doi_icon.svg"></button>
+                    </div>
+                    <a><p id="como_citar">COMO CITAR ESSE TRABALHO?</p></a> 
+                </div>
+            </div>
+            <div id="video_detalhe">
+                <video width="60%" height="auto" controls="controls" autoplay="autoplay">
+                    <source src=""/>
+                </video>
+                <div id="detalhes">
+                    <h4>Detalhes</h4>
+                    <div id="cont_detalhes">
+                        <p>Tipo de Apresentação:<strong>Pôster</strong></p>
+                        <p>Eixo temático:<strong>Alimentação e saúde (AS)</strong> </p>
+                        <p>Palavras-chaves:<strong>Alimentos funcionais, alimentação escolar</strong></p>
+                        <br>
+                        <p><strong>Autores:</strong></p>
+                        <p>Galileo Galilei<sup>1</sup></p>
+                        <p>Berta Lange de Morretes<sup>2</sup></p>
+                        <p>Isaac Newton<sup>3</sup></p>
+                        <p>Cesar Lattes<sup>1</sup></p>
+                        <p>Stephen Hawking<sup>4</sup></p>
+                        <br>
+                        <p class="nota"><sup>1</sup>Universidade Estadual de Campinas</p>
+                        <p class="nota"><sup>2</sup>Universidade de São Paulo</p>
+                        <p class="nota"><sup>3</sup>Instituto Nacional de Pesquisas Espaciais</p>
+                        <p class="nota"><sup>4</sup>Universidade Federal do Rio de Janeiro</p>
+                    </div>
+                </div>
+            </div>
+            <div id="resumo" class="container">
+                <h4>Resumo</h4>
+                <div id="cont_resumo">
+                    <p class="collapse" id="collapseResumo" aria-expanded="false">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p id="resumo"><a id="resumo" role="button" class="collapsed" data-toggle="collapse" href="#collapseResumo" aria-expanded="false" aria-controls="collapseResumo"></a></p>
+                </div>
+            </div>
+            <div id="discussoes" class="container">
+                <h4>Discussões</h4>
+                <div class="discussoes_fixo">
+                    <h5>Compartilhe duas ideias ou dúvidas com os autores!</h5>
+                    <div id="icones">
+                        <img class="icon" src="./src/img/icone1.svg">
+                        <img class="icon" src="./src/img/icone2.svg">
+                        <img class="icon" src="./src/img/icone3.svg">
+                    </div>
+                    <p id="discussoes_fixo">Sabia que o maior estímulo no desenvolvimento cientifico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                </div>
+                <div class="comentar">
+                    <button id="add_comentario" class="btn" type="button">
+                        <a id="botao_comentario">+ Criar Tópico</a>
+                    </button>
+                </div>
+                <div class="comentario">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card-header" id="heading0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                                <h5>Assunto da pergunta aparece aqui</h5>
+                            </button>
+                            <p class="nome_usuario"><strong>Carlos Henrique Santos</strong></p>
+                            <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                            <br>
+                            <div class="interacao_comentario">
+                                <button type="button" class="opcoes btn"></button>
+                                <button type="button" class="curtir btn"></button>
+                                <p class="curtidas"> 5 Curtida(s) &nbsp 4 Comentário(s)</p>
+                            </div>
+                        </div>
+                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+
+                                    Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                            </div>
+                        </div>
+                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+
+                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                        <div class="card-header" id="heading1">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <h5>Assunto da pergunta aparece aqui</h5>
+                            </button>
+                            <p class="nome_usuario"><strong>Carlos Henrique Santos</strong></p>
+                            <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                            <br>
+                            <div class="interacao_comentario">
+                                <button type="button" class="opcoes btn"></button>
+                                <button type="button" class="curtir btn"></button>
+                                <p class="curtidas"> 5 Curtida(s) &nbsp 4 Comentário(s)</p>
+                            </div>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+
+                                    Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                            </div>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+
+                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="comentario">
+                    <h6 class="titulo_comentario">Assunto da pergutna aoarece aqui</h6>
+                    <p class="nome_usuario">Carlos Henrique Santos</p>
+                    <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato increve-se no cam,po da análise da misensão e impacto de processo dormativo situado impact de processo formativo processa...</p>
+                    <div class="interacao_comentario">
+                        <button type="button" class="opcoes btn"></button>
+                        <button type="button" class="curtir btn"></button>
+                        <p class="curtidas"> 1 Like &nbsp 1 Comentário</p>
+                    </div>
+                </div> -->
+            </div>
+            <div id="rodape">
+                <p><img src="./src/img/imagem_footer.svg"></p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
