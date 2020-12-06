@@ -39,7 +39,7 @@
     <div id="corpo">
         <div class="side_bar">
             <ul class="nav flex-column">
-                <li><img id="logo" src="./src/img/logo.svg"></li>
+                <img id="logo" src="./src/img/logo.svg">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Apresentação</a>
                 </li>
@@ -108,7 +108,8 @@
             </div>
             <div id="discussoes" class="container">
                 <h4>Discussões</h4>
-                <div class="discussoes_fixo">
+                <!-- Estilo Inicial Comentario -->
+                <div class="discussoes_fixo" id="discussoes_fixo">
                     <h5>Compartilhe duas ideias ou dúvidas com os autores!</h5>
                     <div id="icones">
                         <img class="icon" src="./src/img/icone1.svg">
@@ -117,16 +118,60 @@
                     </div>
                     <p id="discussoes_fixo">Sabia que o maior estímulo no desenvolvimento cientifico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 </div>
-                <div class="comentar">
-                    <button id="add_comentario" class="btn" type="button">
+                <div class="comentar" id="comentar">
+                    <button id="add_comentario" class="btn" type="button" onclick="clicarAddComentario()">
                         <a id="botao_comentario">+ Criar Tópico</a>
                     </button>
                 </div>
+                <!-- Escrita Comentario -->
+                <div id="escrita_comentario">
+                    <div>
+                        <p id="sugestao">Tem alguma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                    </div>
+                    <div id="envio_comentario">
+                        <label for="assunto" >Assunto</label>
+                        <input placeholder="Digite aqui o título de seu comentário" id="assunto">
+                        <label for="conteudo_comentario">Conteúdo</label>
+                        <textarea  type="text" name="conteudo_comentario" id="conteudo_comentario" placeholder="Digite aqui seu comentário" rows="5"></textarea>
+                        <div id="local_botao">
+                            <button id="enviar_comentario" class="btn" type="button" onclick="clicarEnviar()">
+                                <a id="botao_enviar_comentario" onclick="transformaInputEmTag()">Enviar</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Novo Comentario -->
                 <div class="comentario">
+                    <div id="pos_comentario">
+                        <p id="titulo_pos_comentario">Seu tópico foi enviado com sucesso! :D</p>
+                        <p id="agradecimento_pos_comentario">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico forrespondido!</p>
+                        <a href="#"><p id="link_trabalhos">Descubra outros trabalhos!</p></a>
+                        <button id="add_comentario" class="btn" type="button" onclick="clicarAddComentario()">
+                            <a id="botao_comentario">Criar Novo Tópico</a>
+                        </button>
+                        <p id="feedback">Aguardando feedback dos autores <img src="./src/img/doublecheckgrey.svg"></p>
+                    </div>
+
+
+                    <div class="card-header" id="heading2">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <h5 class="titulo_comentario" id="titulo_comentario"></h5>
+                        </button>
+                        <p class="nome_usuario" id="nome_usuario"><strong>Alguem 12</strong></p>
+                        <p class="cont_comentario" id="cont_comentario"></p>
+                        <br>
+                        <div class="interacao_comentario">
+                            <button type="button" class="opcoes btn"></button>
+                            <button type="button" class="curtir btn"></button>
+                            <p class="curtidas"> 0 Curtida(s) &nbsp 0 Comentário(s)</p>
+                        </div>
+                    </div>
+
+
                     <div class="accordion" id="accordionExample">
                         <div class="card-header" id="heading0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                                <h5>Assunto da pergunta aparece aqui</h5>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                <h5 class="titulo_comentario">Assunto da pergunta aparece aqui</h5>
                             </button>
                             <p class="nome_usuario"><strong>Carlos Henrique Santos</strong></p>
                             <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
@@ -137,13 +182,14 @@
                                 <p class="curtidas"> 5 Curtida(s) &nbsp 4 Comentário(s)</p>
                             </div>
                         </div>
-                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                        <!-- Comentarios do comentario -->
+                        <div id="collapse0" class="collapse in" aria-labelledby="heading0" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong> <img src="./src/img/doublecheckorange.svg"></p>
                                 <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                             </div>
                         </div>
-                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                        <div id="collapse0" class="collapse in" aria-labelledby="heading0" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
                                 <p class="comentario_seguinte">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
@@ -151,15 +197,15 @@
                                     Obrigada pela resposta, muito interessante o seu trabalho! </p>
                             </div>
                         </div>
-                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                        <div id="collapse0" class="collapse in" aria-labelledby="heading0" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong><img src="./src/img/doublecheckorange.svg"></p>
                                 <p class="comentario_seguinte">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
 
                                     Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                             </div>
                         </div>
-                        <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                        <div id="collapse0" class="collapse in" aria-labelledby="heading0" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
                                 <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
@@ -167,7 +213,7 @@
                         </div>
                         <div class="card-header" id="heading1">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                <h5>Assunto da pergunta aparece aqui</h5>
+                                <h5 class="titulo_comentario">Assunto da pergunta aparece aqui</h5>
                             </button>
                             <p class="nome_usuario"><strong>Carlos Henrique Santos</strong></p>
                             <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
@@ -178,21 +224,21 @@
                                 <p class="curtidas"> 5 Curtida(s) &nbsp 4 Comentário(s)</p>
                             </div>
                         </div>
-                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div id="collapse1" class="collapse in" aria-labelledby="heading1" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong><img src="./src/img/doublecheckorange.svg"></p>
                                 <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                             </div>
                         </div>
-                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div id="collapse1" class="collapse in" aria-labelledby="heading1" data-parent="#accordionExample">
                             <div class="card-body">
-                                <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
+                                <p class="nome_usuario"><strong>Adriana da Silva</strong><img src="./src/img/doublecheckorange.svg"></p>
                                 <p class="comentario_seguinte">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
 
                                     Obrigada pela resposta, muito interessante o seu trabalho! </p>
                             </div>
                         </div>
-                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div id="collapse1" class="collapse in" aria-labelledby="heading1" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
                                 <p class="comentario_seguinte">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
@@ -200,7 +246,7 @@
                                     Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                             </div>
                         </div>
-                        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                        <div id="collapse1" class="collapse in" aria-labelledby="heading1" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="nome_usuario"><strong>Adriana da Silva</strong></p>
                                 <p class="comentario_seguinte">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
@@ -208,22 +254,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="comentario">
-                    <h6 class="titulo_comentario">Assunto da pergutna aoarece aqui</h6>
-                    <p class="nome_usuario">Carlos Henrique Santos</p>
-                    <p class="cont_comentario">Comecinho da pergunta aparece aqui resente relato increve-se no cam,po da análise da misensão e impacto de processo dormativo situado impact de processo formativo processa...</p>
-                    <div class="interacao_comentario">
-                        <button type="button" class="opcoes btn"></button>
-                        <button type="button" class="curtir btn"></button>
-                        <p class="curtidas"> 1 Like &nbsp 1 Comentário</p>
-                    </div>
-                </div> -->
             </div>
             <div id="rodape">
                 <p><img src="./src/img/imagem_footer.svg"></p>
             </div>
-        </div>
-        
+        </div>   
     </div>
+    <script type="text/javascript" src="./src/scripts.js"></script>
 </body>
 </html>

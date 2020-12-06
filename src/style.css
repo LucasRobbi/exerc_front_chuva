@@ -91,7 +91,7 @@ a.nav-link{
     width: 15%;
     max-width: 15%;
     min-width: 15%;
-    height: 100em;
+    height: all;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #trabalhos{
@@ -206,11 +206,15 @@ h5{
     text-align: center;
 }
 .card-body{
-    border: 1px solid #ECECEC
+    border: 1px solid #ECECEC;
+    border-radius: 10px;
+    margin: 5px;
 }
 .card-header{
+    display: block;
     background-color: #FFFFFF;
-    border: none;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #discussoes{
     padding: 0;
@@ -235,9 +239,8 @@ h5{
     width: auto;
     height: 40px;
     background-color: #ED7839;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #eff1f8;
-    border: none;
 }
 .comentar{
     margin-top: 15px;
@@ -259,7 +262,6 @@ h5{
     padding: 15px;
     border: 1px solid #ECECEC;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .titulo_comentario{
     margin: 0;
@@ -271,6 +273,8 @@ h5{
     margin-bottom: 10px;
     font-size: 12px;
     color: #5C5C5C;
+    display: flex;
+    justify-content: space-between;
 }
 .cont_comentario{
     font-size: 14px;
@@ -286,7 +290,6 @@ h5{
     height: 20px;
     background-color: #FFFFFF;
     border-radius: 5px;
-    border: none;
     background-image: url("./img/opcoes.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -299,7 +302,6 @@ h5{
     background-color: #ED7839;
     border-radius: 5px;
     color: #eff1f8;
-    border: none;
     background-image: url("./img/coracao.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -308,6 +310,99 @@ h5{
 .curtidas{
     font-size: 14px;
     color: #757575;
+}
+#heading2{
+    display: none;
+    filter: blur(1px);
+    background: #DDDDDD;
+}
+/*ESCRITA COMENTARIO*/
+label{
+    color: #ED7839;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+input{
+    display: block;
+    justify-content: center;
+    width: 95%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    justify-content: center;
+    width: 95%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#sugestao{
+    font-size: 14px;
+    color: #5C5C5C;
+    text-align: center;
+    margin: 5px;
+}
+#escrita_comentario{
+    display: none;
+    justify-content: flex-start;
+}
+#envio_comentario{
+    display: block;
+    justify-content: flex-start;
+}
+#enviar_comentario{
+    position: right;
+}
+#enviar_comentario{
+    margin-right: 5px;
+    height: 40px;
+    background-color: #ED7839;
+    border-radius: 10px;
+    color: #eff1f8;
+}
+#botao_enviar_comentario{
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-weight: bolder;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#local_botao{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+/*POS COMENTARIO*/
+#pos_comentario{
+    display: none;
+    text-align: center;
+}
+#titulo_pos_comentario{
+    color: #ED7839;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+#agradecimento_pos_comentario{
+    font-size: 14px;
+    color: #595959;
+    margin-top: 15px;
+}
+#link_trabalhos{
+    color: #F48F44;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+#feedback{
+    color: #707070;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
 }
 /*RODAPÉ*/
 #rodape{
