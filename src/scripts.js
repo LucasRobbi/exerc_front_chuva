@@ -1,4 +1,5 @@
 /*Scripts*/
+/* Alterações visuais para iniciar a escrita de um comentario na página */
 function clicarAddComentario(){
     var comentar = document.getElementById('comentar');
     var discussoes_fixo = document.getElementById('discussoes_fixo');
@@ -10,6 +11,7 @@ function clicarAddComentario(){
     escrita_comentario.style.display = "block";
     pos_comentario.style.display = "none";
 }
+/*função para alteração do css para alterar a formatação da página e mostrar o conteudo da msg escrita */
 function clicarEnviar(){
     var escrita_comentario = document.getElementById('escrita_comentario');
     var pos_comentario = document.getElementById("pos_comentario");
